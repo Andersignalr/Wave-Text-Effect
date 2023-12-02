@@ -1,15 +1,28 @@
 body{
     background-color: #282a2b;
-    color: white;
 }
 
 .wavy{
     margin-top: 20px;
+    background-color: #ffffff;
+    width: 80px;
+    height: 40px;
+
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wavy span{
     position: relative;
     display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: rgb(116,236,209);
+background: linear-gradient(135deg, rgba(116,236,209,1) 0%, rgba(33,167,136,1) 100%);
+    border-radius: 50px;
+    margin: 2px;
     animation: animate 1s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
 }
@@ -17,13 +30,13 @@ body{
 
 @keyframes animate {
     0%{
-        transform: translateY(0px);
+        transform: translateY(5px);
     }
     20%{
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
     40%,100%{
-        transform: translateY(0px);
+        transform: translateY(5px);
     }
     
 }
